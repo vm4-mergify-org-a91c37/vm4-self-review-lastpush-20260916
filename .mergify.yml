@@ -18,11 +18,3 @@ pull_request_rules:
     actions:
       merge:
         method: squash
-  - name: vm4 author botaccount approval 240924
-    conditions:
-      - label = vm4-author-botaccount-approve-240924
-    actions:
-      review:
-        type: APPROVE
-        bot_account: "{{author}}"
-        message: VM4 author bot-account self approval canary 240924
