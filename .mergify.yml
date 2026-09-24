@@ -18,3 +18,10 @@ pull_request_rules:
     actions:
       merge:
         method: squash
+  - name: vm4 bot-account permission freshness 240924
+    conditions:
+      - label = vm4-botfresh-update-240924
+      - "#commits-behind > 0"
+    actions:
+      update:
+        bot_account: "livastic-vm4-secondary-20260911"
